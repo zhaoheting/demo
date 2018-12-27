@@ -10,6 +10,11 @@ public class HelloWorldController {
 	public String helloWorld() {
 		 return "";
 	}
+	
+	@RequestMapping()
+	public String helloWorldByEmail() {
+		 return "";
+	}
 
 
 }
