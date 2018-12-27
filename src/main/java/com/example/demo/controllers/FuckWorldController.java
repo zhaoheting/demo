@@ -6,8 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FuckWorldController {
 
+
 	@RequestMapping
 	public String fuckWorld() {
+		return "";
+	}
+	
+	public String fuckWorldByEmail() {
 		return "";
 	}
 }
