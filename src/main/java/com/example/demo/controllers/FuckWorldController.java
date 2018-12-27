@@ -10,4 +10,6 @@ public class FuckWorldController {
 	public String fuckWorld() {
 		return "";
 	}
+	
+	@RequestMapping
 }
