@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class FuckWorldController {
 
 
-	@RequestMapping
+	@RequestMapping("/fuck")
 	public String fuckWorld() {
 		return "";
 	}
 	
-	@RequestMapping
+	@RequestMapping("/email")
 	public String fuckWorldByEmail() {
 		return "";
 	}
