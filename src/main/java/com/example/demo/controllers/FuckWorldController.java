@@ -12,7 +12,7 @@ public class FuckWorldController {
 		return "";
 	}
 	
-	@RequestMapping("/email")
+	@RequestMapping("/fuckEmail")
 	public String fuckWorldByEmail() {
 		return "";
 	}
