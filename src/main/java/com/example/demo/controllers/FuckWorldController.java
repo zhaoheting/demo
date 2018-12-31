@@ -16,6 +16,5 @@ public class FuckWorldController {
 	public String fuckWorldByEmail() {
 		return "";
 	}
-
 	
 }
