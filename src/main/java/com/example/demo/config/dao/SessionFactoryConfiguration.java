@@ -27,7 +27,7 @@ public class SessionFactoryConfiguration {
 	private String entityPackage;
 
 	//将datasource和mybatis关联起来
-	@Bean(name="sqlSessionFactory+")
+	@Bean(name="sqlSessionFactory")
 	public SqlSessionFactoryBean createSqlSessionFactoryBean() throws IOException {
 		SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
 		sqlSessionFactoryBean.setConfigLocation(new ClassPathResource(mybatisConfigFilePath));
