@@ -38,5 +38,5 @@ public interface AreaDao {
 	 * @param area
 	 * @return
 	 */
-	int deleteArea(Area area);
+	int deleteArea(int areaId);
 }
