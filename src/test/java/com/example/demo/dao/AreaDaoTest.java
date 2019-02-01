@@ -83,7 +83,7 @@ public class AreaDaoTest {
 	@Test
 	public void testDeleteArea() {
 		int count = areaDao.deleteArea(3);
-		assertEquals(2, count);
+		assertEquals(33, count);
 	}
 
 }
