@@ -1,8 +1,8 @@
 package com.example.demo.dao;
 
-import java.util.List;
-
 import com.example.demo.entity.Area;
+
+import java.util.List;
 
 public interface AreaDao {
 
@@ -28,15 +28,15 @@ public interface AreaDao {
 	
 	/**
 	 * 更新区域信息
-	 * @param area
+	 * @param areaId
 	 * @return
 	 */
-	int updateArea(Area area);
+	int updateArea(int areaId);
 	
 	/**
 	 * 删除区域
-	 * @param area
+	 * @param areaId
 	 * @return
 	 */
-	int deleteArea(Area area);
+	int deleteArea(int areaId);
 }
