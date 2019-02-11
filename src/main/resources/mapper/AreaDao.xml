@@ -4,7 +4,14 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 	
 	<mapper namespace="com.example.demo.dao.AreaDao">
-		<select id="queryArea" resultType="com.example.demo.entity.Area">
+		<resultMap type="com.example.demo.entity.Area" id="AreaMap">
+		
+			<result property="area_id" column="area_id"/>
+		
+			<result property="area_name" column="area_name"/>
+		
+		</resultMap>
+		<select id="queryArea" resultType="com.example.demo.entity.Area" resultMap="AreaMap">
 		SELECT area_id,area_name,priority,create_time,last_edit_time
 		FROM tb_area
 		ORDER BY priority
