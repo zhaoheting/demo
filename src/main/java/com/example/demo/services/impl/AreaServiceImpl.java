@@ -57,7 +57,7 @@ public class AreaServiceImpl implements AreaService {
             updatedArea.setAreaName(area.getAreaName());
             updatedArea.setLastEditTime(new Date());
             try{
-                int count = areaDao.insertArea(updatedArea);
+                int count = areaDao.updateArea(updatedArea);
                 if(count == 1){
                     return true;
                 }

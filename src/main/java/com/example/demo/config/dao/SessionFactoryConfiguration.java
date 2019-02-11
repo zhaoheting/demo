@@ -1,9 +1,5 @@
 package com.example.demo.config.dao;
 
-import java.io.IOException;
-
-import javax.sql.DataSource;
-
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,17 +9,20 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import javax.sql.DataSource;
+import java.io.IOException;
+
 @Configuration
 public class SessionFactoryConfiguration {
 
-	@Value("mybatis_config_file")
+	@Value("${mybatis_config_file}")
 	private String mybatisConfigFilePath;
-	@Value("mapper_path")
+	@Value("${mapper_path}")
 	private String mapperPath;
 	@Autowired
 	@Qualifier("dataSource")
 	private DataSource dataSource;
-	@Value("entity_package")
+	@Value("${entity_package}")
 	private String entityPackage;
 
 	//将datasource和mybatis关联起来

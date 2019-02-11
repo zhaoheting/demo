@@ -28,10 +28,10 @@ public interface AreaDao {
 	
 	/**
 	 * 更新区域信息
-	 * @param areaId
+	 * @param area
 	 * @return
 	 */
-	int updateArea(int areaId);
+	int updateArea(Area area);
 	
 	/**
 	 * 删除区域

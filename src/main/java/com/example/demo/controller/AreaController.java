@@ -35,7 +35,7 @@ public class AreaController {
      */
     @RequestMapping(value="/getAreaById",method=RequestMethod.GET)
     public Map<String,Object> getAreaById(Integer areaId){
-        int a = 1/0;
+//        int a = 1/0;
         Map<String,Object> modelMap = new HashMap<String,Object>();
         modelMap.put("area", areaService.queryAreaById(areaId));
         return modelMap;
@@ -46,7 +46,7 @@ public class AreaController {
      * @param area
      * @return
      */
-    @RequestMapping(value="/getAreaById",method=RequestMethod.GET)
+    @RequestMapping(value="/addArea",method=RequestMethod.GET)
     public Map<String,Object> addArea(@RequestBody Area area){
         Map<String,Object> modelMap = new HashMap<String,Object>();
         modelMap.put("area", areaService.addArea(area));
